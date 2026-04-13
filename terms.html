@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Use - What's Normal</title>
+  <style>
+    :root {
+      --accent:       rgb(10, 132, 255);
+      --accent-base:  rgb(0, 84, 200);
+      --accent-light: rgba(10, 132, 255, 0.12);
+      --bg:           #fafafa;
+      --card:         #ffffff;
+      --card-shadow:  rgba(0, 0, 0, 0.07);
+      --text:         #1c1c1e;
+      --subtext:      #6c6c72;
+      --border:       transparent;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:          #1c1c1e;
+        --card:        #2c2c2e;
+        --card-shadow: rgba(0, 0, 0, 0.35);
+        --text:        #f5f5f7;
+        --subtext:     #a3a3a8;
+        --border:      rgba(255,255,255,0.08);
+      }
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 24px 16px 64px;
+      max-width: 680px;
+      margin: 0 auto;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .logo-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+      padding-top: 24px;
+    }
+
+    .logo-3d {
+      position: relative;
+      width: 82px;
+      height: 82px;
+    }
+
+    .logo-3d .base {
+      position: absolute;
+      inset: 0;
+      background: var(--accent-base);
+      border-radius: 20px;
+    }
+
+    .logo-3d .face {
+      position: absolute;
+      inset: 0;
+      bottom: 8px;
+      background: var(--accent);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(0, 84, 200, 0.45);
+    }
+
+    .logo-3d .face svg {
+      width: 36px;
+      height: 36px;
+      fill: white;
+    }
+
+    .logo-wrap h1 {
+      font-size: 28px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      color: var(--text);
+    }
+
+    .logo-wrap p {
+      font-size: 14px;
+      color: var(--subtext);
+      text-align: center;
+      max-width: 320px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 20px;
+      padding: 22px 20px;
+      margin-bottom: 14px;
+      box-shadow: 0 4px 0 var(--card-shadow),
+                  0 6px 16px rgba(0,0,0,0.06);
+      border: 1px solid var(--border);
+    }
+
+    .card h2 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent-base);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .card h2 { color: var(--accent); }
+    }
+
+    .card p, .card li {
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--text);
+    }
+
+    .card ul {
+      padding-left: 18px;
+      margin-top: 8px;
+    }
+
+    .card ul li {
+      margin-bottom: 6px;
+    }
+
+    .highlight {
+      display: inline-block;
+      background: var(--accent-light);
+      color: var(--accent-base);
+      border-radius: 8px;
+      padding: 2px 8px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .highlight { color: var(--accent); }
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--subtext);
+      margin-top: 32px;
+    }
+
+    a { color: var(--accent-base); text-decoration: none; }
+    @media (prefers-color-scheme: dark) { a { color: var(--accent); } }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <div class="logo-wrap">
+    <div class="logo-3d">
+      <div class="base"></div>
+      <div class="face">
+        <!-- Document icon -->
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm-1 7V3.5L18.5 9H13zM8 16h8v2H8zm0-4h8v2H8zm0-4h5v2H8z"/>
+        </svg>
+      </div>
+    </div>
+    <h1>What's Normal</h1>
+    <p>Terms of Use - Last updated April 2026</p>
+  </div>
+
+  <div class="card">
+    <h2>Acceptance of Terms</h2>
+    <span class="highlight">By using this app</span>
+    <p>By downloading or using What's Normal, you agree to these Terms of Use. If you do not agree, please do not use the app.</p>
+  </div>
+
+  <div class="card">
+    <h2>License</h2>
+    <p>What's Normal grants you a limited, non-exclusive, non-transferable, revocable license to use the app for personal, non-commercial purposes. You may not copy, modify, distribute, sell, or lease any part of the app or its content.</p>
+  </div>
+
+  <div class="card">
+    <h2>Subscriptions</h2>
+    <span class="highlight">Auto-renewing</span>
+    <p>What's Normal Pro is an optional auto-renewing subscription. Your subscription will automatically renew unless cancelled at least 24 hours before the end of the current period. To cancel, go to <strong>Settings &gt; Apple ID &gt; Subscriptions</strong> on your device. No refunds are provided for the unused portion of a subscription period.</p>
+  </div>
+
+  <div class="card">
+    <h2>Disclaimer</h2>
+    <p>What's Normal provides educational and informational content to help manage flight anxiety. It is <strong>not</strong> a substitute for professional medical, psychological, or therapeutic advice. Do not rely on this app to make decisions about your health or safety. If you experience severe anxiety or a medical condition, please consult a qualified professional.</p>
+  </div>
+
+  <div class="card">
+    <h2>Limitations of Liability</h2>
+    <p>To the maximum extent permitted by law, the developer of What's Normal is not liable for any indirect, incidental, or consequential damages arising from your use of the app. The app is provided "as is" without warranties of any kind.</p>
+  </div>
+
+  <div class="card">
+    <h2>Intellectual Property</h2>
+    <p>All content, design, code, and assets in What's Normal are owned by Benjamin Belloeil. You may not reproduce, redistribute, or create derivative works from any part of the app without prior written permission.</p>
+  </div>
+
+  <div class="card">
+    <h2>Changes to Terms</h2>
+    <p>We may update these Terms of Use from time to time. When we do, we will update the date at the top of this page. Continued use of the app after any changes constitutes acceptance of the updated terms.</p>
+  </div>
+
+  <div class="card">
+    <h2>Contact</h2>
+    <p>If you have any questions about these terms, please contact us at:<br />
+    <a href="mailto:legal@whatsnormal.app">legal@whatsnormal.app</a></p>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 What's Normal. All rights reserved.</p>
+    <p style="margin-top:6px;">
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple Standard EULA</a>
+    </p>
+  </footer>
+
+</body>
+</html>
